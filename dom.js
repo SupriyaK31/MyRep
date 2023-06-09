@@ -12,22 +12,13 @@
 
 //headertitle.style.borderBottom='solid 3px #000';
 
-//var byclass=document.getElementsByClassName('list-group-item');
+var byclass=document.getElementsByClassName('list-group-item');
 //get element by classname
-//console.log(byclass);
+console.log(byclass);
 
-//console.log(byclass[1]);
-//byclass[1].textContent='hello';
+console.log(byclass[1]);
+byclass[2].style.backgroundColor='green'
+for(let i=0;i<byclass.length;i++){
+    byclass[i].style.fontWeight = 'bold'
+}
 
-//Query selector
-
-//var header1=document.querySelector('#main-header');
-//header1.style.borderBottom='solid 6px #011';
-
-//var input=document.querySelector('input');
-//input.value='hello world';
-
-//query selectorall
-
-var allselector=document.querySelectorAll('.title');
-console.log(allselector);
