@@ -45,10 +45,67 @@
 // secondList[0].style.backgroundColor = "green";
 
 
-var odd=document.querySelectorAll('li:nth-child(odd)')
-var even=document.querySelectorAll('li:nth-child(even)')
-for(let i=0;i<odd.length;i++)
-{
-    odd[i].style.backgroundColor="gray"
-    even[i].style.backgroundColor="lightgray"
-}
+// var odd=document.querySelectorAll('li:nth-child(odd)')
+// var even=document.querySelectorAll('li:nth-child(even)')
+// for(let i=0;i<odd.length;i++)
+// {
+//     odd[i].style.backgroundColor="gray"
+//     even[i].style.backgroundColor="lightgray"
+// }
+
+//DOM triversing
+
+var item=document.querySelector('#items');
+// console.log(item.parentElement)
+// console.log(item.parentNode.parentNode.parentNode)
+// console.log(item.lastElementChild)
+// item.lastElementChild.style.color="blue"
+// var tag=document.querySelector('body');
+// console.log(tag.lastChild)
+// console.log(item.childNodes) //node list
+
+// console.log(item.children) //html collection
+// item.children[1].style.backgroundColor ="yellow"
+
+//first child
+
+// console.log(item.firstChild)
+
+// console.log(item.firstElementChild)
+
+// item.firstElementChild.textContent = "Hello 1"
+
+//last child
+
+// console.log(item.lastChild)
+
+// console.log(item.lastElementChild)
+// item.lastElementChild.textContent = "Hello 4"
+
+// //next sibiling
+// var title=document.querySelector('head')
+// console.log(item.nextSibling)
+// console.log(title.nextElementSibling)
+
+//previous sibiling
+
+// console.log(item.previousSibling)
+// console.log(item.previousElementSibling)
+
+// create element
+
+var newDiv = document.createElement('div')
+// add class
+newDiv.className = "title"
+// add attribut
+newDiv.setAttribute('title','hello')
+// text node
+
+var newDivText=document.createTextNode('Hello World')
+newDiv.appendChild(newDivText);
+
+
+var container = document.querySelector('header .container')
+var h1=document.querySelector('header h1')
+container.insertBefore(newDiv,h1);
+console.log(newDiv);
