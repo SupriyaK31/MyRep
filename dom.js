@@ -22,13 +22,19 @@
 //     byclass[i].style.fontWeight = 'bold'
 // }
 
-var li=document.getElementsByTagName('li');
-//get element by TagName
+//QuerySelector
 
-console.log(li);
-li[2].style.backgroundColor='green'
-for(let i=0;i<li.length;i++){
-    li[i].style.fontWeight = 'bold'
-}
+var header= document.querySelector('#main-header');
+header.style.borderBottom ="solid 4px #ccc";
 
+var input=document.querySelector('input')
+input.value = "hello world"
 
+var submit=document.querySelector('input[type="submit"]');
+submit.value="send"
+
+var secondList=document.querySelector('.list-group-item:nth-child(2)')
+secondList.style.backgroundColor = "green"
+
+var trdList = document.querySelector('.list-group-item:nth-child(3)')
+trdList.style.visibility = "hidden"
