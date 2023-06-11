@@ -4,7 +4,7 @@ var itemList=document.getElementById('items');
 form.addEventListener('submit', addItem);
 itemList.addEventListener('click', remoteItem);
 //function call
-
+//EL
 function addItem(e){
     e.preventDefault();
     //save input text into newItem
