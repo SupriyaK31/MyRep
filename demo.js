@@ -12,7 +12,12 @@ function addUser(e){
     alert('Please enter all fields');
  }  
  else{
-   localStorage.setItem(typeof(`${inputName.value}`),`${inputEmail.value}`);
+   let userDetails= {
+      name:`${inputName.value}`,
+      email:`${inputEmail.value}`
+   };
+   let Serialized = JSON.stringify(userDetails);
+   localStorage.setItem(`${inputName.value}`,Serialized);
     const li=document.createElement('li');
     li.appendChild(document.createTextNode(`${inputName.value}   ${inputEmail.value}`));
     userList.appendChild(li);
